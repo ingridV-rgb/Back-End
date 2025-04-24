@@ -31,3 +31,37 @@
 // let mensagem = idade >= 18 ? "acesso permitido" : "acesso negado" #if e else simples
 
 // let: o valor pode ser alterado
+
+// variavel guarda VALOR = tipo primitivo --> passa cópia do valor
+// objeto armazena REFERÊNCIA (endereço de onde o objeto foi criado)
+
+//operador new cria um novo objeto --> função construtora; cria um objeto na memória e devolve o endereço na variavel que está sendo declarada: ex= o
+// var o = new.Object(); objeto vazio
+
+// this = precisa ser usado para se referir a um parametro especifico| exemplo: this.marca = marca | chama a propriedade
+
+function Carro(marca,modelo){
+    this.marca = marca,
+    this.modelo = modelo}
+
+let meuCarro = new Carro("Fiat", "Pulse") //passagem como referência na memória --> tecnicamente o mesmo objeto
+console.log(`A marca do Carro é ${meuCarro.marca}`)
+console.log(`O meu modelo é ${meuCarro.modelo}`)
+
+let moto = {
+    cor: "preto"
+}
+
+let bicicleta = moto
+console.log("moto:" + moto.cor)
+console.log("bicicleta:" + bicicleta.cor)
+bicicleta.cor = "preto escuro"
+
+console.log("moto:" + moto.cor)
+console.log("bicicleta:" + bicicleta.cor)
+//aponta para o mesmo objeto na memória, quando muda a cor de algo
+
+//array = coleção de objetos [] --> se tiver colchete é um array
+//se tiver {} chave é um objeto
+
+//quando voce cria um novo objeto, voce tá instanciando (instância) um novo objeto na memoria
