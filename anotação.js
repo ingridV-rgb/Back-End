@@ -65,3 +65,37 @@ console.log("bicicleta:" + bicicleta.cor)
 //se tiver {} chave é um objeto
 
 //quando voce cria um novo objeto, voce tá instanciando (instância) um novo objeto na memoria
+
+//Estruturas de repetição (loops)
+
+//While -- enquanto, é (testado)executado enquanto for verdadeiro, não sabe quando vai parar de repetir. Se a condição for falsa, a condição termina
+//Do while --> faça enquanto. Quando quer que o bloco de comando seja executado pelo menos uma vez, para depois testar
+
+do {
+    //declaração
+} while (condition);
+
+//for --> para; quando sabe quantas vezes quer repetir. primeira vez executado ele cria a variavel e testa. Só encerra quando a condição for falsa
+
+for (let index = 0 /*cria/introduz*/; index < array.length /*testa*/; index++ /*incremento*/) { //três partes
+    const element = array[index]; /*armazena*/
+}
+
+//break --> indica onde encerra/interrompe o loop; while, do-while, for ou switch (interrompe o laço de repetição e continua o código que está fora do laço)
+//continue --> não encerra execução do laço (só se a condição mudar para falso). Vai voltar pro teste da condição --> testa condição. pode percorrer todos os elementos da coleção
+
+//for...in --> (usa para objetos) intera (valor) propriedades de um objeto. Percorre a coleção que você escolheu e guarda dentro de um for (imprime)
+
+let aluno = { //coleção
+    nome: "Marcos",
+    email: "ainfaoin@gmail.com",
+    idade: 25
+};
+
+for (let dados in aluno) {
+    console.log(aluno(dados))
+}
+
+//for...of (usa para arrays)--> mais simples a utilização
+
+
